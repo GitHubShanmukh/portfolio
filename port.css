@@ -1,0 +1,76 @@
+/* Set body font and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    border: 10px solid #2053af; /* Add border to the body */
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #2053af;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Section styling */
+  section {
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  section:target {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2053af;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #2053af;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Animation Effects */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
